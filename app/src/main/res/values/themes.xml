@@ -1,0 +1,23 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.ShareHelp" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryVariant">@color/grey_F</item>
+        <item name="colorOnPrimary">@color/grey_A</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/grey_E</item>
+        <item name="colorSecondaryVariant">@color/sh_primary</item>
+        <item name="colorOnSecondary">@color/grey_A</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimary</item>
+        <!-- Customize your theme here. -->
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:navigationBarColor">?attr/colorSecondary</item>
+    </style>
+    
+    <style name="Theme.ShareHelp.Launcher" parent="Theme.ShareHelp">
+        <item name="android:windowBackground">@drawable/launch_screen</item>
+        <item name="android:navigationBarColor">@color/white</item>
+    </style>
+</resources>

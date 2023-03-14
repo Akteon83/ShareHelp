@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorSecondaryVariant">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="128dp"
+        android:padding="16dp"
+        android:background="@drawable/profile_data_shape"
+        tools:context=".ProfileActivity">
+
+        <com.Akteon_.sharehelp.InputField
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+            android:inputType="text"
+            app:title="Имя" />
+
+        <com.Akteon_.sharehelp.InputField
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:inputType="textEmailAddress"
+            app:title="Эл. почта" />
+
+        <com.Akteon_.sharehelp.InputField
+            android:id="@+id/character"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:inputType="textMultiLine"
+            app:title="О себе" />
+
+    </LinearLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        android:layout_width="132dp"
+        android:layout_height="132dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="64dp"
+        app:civ_border_overlay="false"
+        app:civ_border_width="4dp"
+        app:civ_border_color="?attr/colorPrimary"
+        android:src="@drawable/example" />
+
+</RelativeLayout>

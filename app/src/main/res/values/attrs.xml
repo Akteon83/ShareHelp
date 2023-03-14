@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="InputField">
+        <attr name="title" format="string" />
+        <attr name="android:inputType" />
+    </declare-styleable>
+
+    <declare-styleable name="DiscussionPreview">
+        <attr name="topic" format="string" />
+        <attr name="problem" format="string" />
+    </declare-styleable>
+</resources>
