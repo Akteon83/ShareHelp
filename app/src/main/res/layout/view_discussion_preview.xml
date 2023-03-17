@@ -9,7 +9,7 @@
         android:id="@+id/author_profile_image"
         android:layout_width="28dp"
         android:layout_height="28dp"
-        android:src="@drawable/example" />
+        android:src="@drawable/example_2" />
 
     <ImageView
         android:id="@+id/share"
@@ -19,17 +19,27 @@
         android:src="@drawable/svgrepo_share" />
 
     <ImageView
+        android:id="@+id/skip"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:src="@drawable/svgrepo_left" />
 
     <ImageView
+        android:id="@+id/save"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true"
         android:src="@drawable/svgrepo_right" />
+
+    <ImageView
+        android:id="@+id/like"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/svgrepo_heart" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -51,8 +61,9 @@
             android:id="@+id/problem"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:gravity="center"
             android:layout_marginTop="8dp"
-            android:text="Я разрабатывал своё Android-приложение с использованием EditText, и я хотел бы избавиться от подчёркивания вводимого текста, появляющегося, когда я нажимаю на EditText."
+            android:text="Я разрабатывал своё Android-приложение с использованием EditText, и я хотел бы избавиться от подчёркивания вводимого текста, появляющегося, когда я нажимаю на EditText. Поиск в интернете ничего не дал. Кто может помочь?"
             android:textSize="16sp" />
 
     </LinearLayout>
