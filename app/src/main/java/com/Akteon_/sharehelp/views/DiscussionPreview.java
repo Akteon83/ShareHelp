@@ -1,4 +1,4 @@
-package com.Akteon_.sharehelp;
+package com.Akteon_.sharehelp.views;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -10,6 +10,7 @@ import android.widget.RelativeLayout;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
+import com.Akteon_.sharehelp.R;
 import com.Akteon_.sharehelp.databinding.ViewDiscussionPreviewBinding;
 
 public class DiscussionPreview extends RelativeLayout {

@@ -3,13 +3,81 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragments.AddFragment"
-    android:padding="20dp">
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".fragments.AddFragment">
 
     <EditText
+        android:id="@+id/topic"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="25sp"
-        android:hint="Тема"/>
+        android:textSize="24sp"
+        android:hint="Тема"
+        android:textStyle="bold"
+        android:background="@color/transparent"/>
+
+    <LinearLayout
+        android:id="@+id/tag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="8dp"
+        android:padding="8dp"
+        android:background="@drawable/input_field_frame_shape">
+
+        <TextView
+            android:id="@+id/chosen_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="Выберите тег" />
+
+        <TextView
+            android:id="@+id/sports"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:visibility="gone"
+            android:textSize="16sp"
+            android:text="Спорт" />
+
+        <TextView
+            android:id="@+id/games"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:visibility="gone"
+            android:textSize="16sp"
+            android:text="Игры" />
+
+        <TextView
+            android:id="@+id/music"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:visibility="gone"
+            android:textSize="16sp"
+            android:text="Музыка" />
+
+        <TextView
+            android:id="@+id/programming"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:visibility="gone"
+            android:textSize="16sp"
+            android:text="Программирование" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/problem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:inputType="textMultiLine"
+        android:textSize="20sp"
+        android:hint="Опишите Вашу проблему"
+        android:background="@color/transparent" />
 
 </LinearLayout>

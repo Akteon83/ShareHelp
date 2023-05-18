@@ -1,4 +1,4 @@
-package com.Akteon_.sharehelp;
+package com.Akteon_.sharehelp.views;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -9,6 +9,7 @@ import android.widget.LinearLayout;
 
 import androidx.annotation.Nullable;
 
+import com.Akteon_.sharehelp.R;
 import com.Akteon_.sharehelp.databinding.ViewInputFieldBinding;
 
 public class InputField extends LinearLayout {
@@ -42,5 +43,9 @@ public class InputField extends LinearLayout {
 
     public String getInputText() {
         return binding.input.getText().toString();
+    }
+
+    public void setInputText(String text) {
+        binding.input.setText(text);
     }
 }

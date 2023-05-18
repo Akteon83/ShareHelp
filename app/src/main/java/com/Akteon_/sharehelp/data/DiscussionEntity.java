@@ -12,6 +12,7 @@ public class DiscussionEntity {
     public String topic;
     public String problem;
     public String tag;
+    public int likes;
 
     public DiscussionEntity(String topic, int authorId, String tag, String description) {
         this.topic = topic;

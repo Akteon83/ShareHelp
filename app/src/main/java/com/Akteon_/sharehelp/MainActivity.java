@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import com.Akteon_.sharehelp.controller.AuthController;
 import com.Akteon_.sharehelp.databinding.ActivityMainBinding;
 import com.Akteon_.sharehelp.fragments.AddFragment;
 import com.Akteon_.sharehelp.fragments.ChatFragment;
@@ -29,6 +30,11 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         setTheme(R.style.Theme_ShareHelp);
         super.onCreate(savedInstanceState);
+        AuthController controller = new AuthController();
+        if (!controller.isAuth()) {
+            startActivity(new Intent(this, LoginActivity.class));
+            finish();
+        }
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
         bottomNavigationView = binding.bottomNavigation;

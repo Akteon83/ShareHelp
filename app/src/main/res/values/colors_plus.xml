@@ -8,6 +8,7 @@
     <color name="grey_C">#C0C0C0</color>
     <color name="grey_E">#E0E0E0</color>
 
+    <color name="transparent">#00000000</color>
     <color name="grey_3">#303030</color>
     <color name="grey_F">#F0F0F0</color>
 

@@ -7,21 +7,11 @@
     android:background="@drawable/gradient_background"
     tools:context=".fragments.HomeFragment">
 
-    <androidx.cardview.widget.CardView
+    <com.yalantis.library.Koloda
+        android:id="@+id/koloda"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginVertical="96dp"
-        android:layout_marginHorizontal="48dp"
-        app:cardCornerRadius="16dp"
-        android:layout_centerInParent="true">
-
-        <com.Akteon_.sharehelp.DiscussionPreview
-            android:id="@+id/recommendation"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            app:topic="Как убрать подчеркивание в EditText?"
-            app:problem="Я разрабатывал своё Android-приложение с использованием EditText, и я хотел бы избавиться от подчёркивания вводимого текста, появляющегося, когда я нажимаю на EditText. Поиск в интернете ничего не дал. Кто может помочь?" />
-
-        </androidx.cardview.widget.CardView>
+        app:koloda_card_layout="@layout/view_discussion_preview"
+        android:layout_centerInParent="true" />
 
 </RelativeLayout>

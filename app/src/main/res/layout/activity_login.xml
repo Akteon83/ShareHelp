@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/gradient_background"
+    android:paddingHorizontal="24dp"
+    android:paddingVertical="32dp"
+    tools:context=".LoginActivity">
+
+    <TextView
+        android:id="@+id/greeting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:textSize="32sp"
+        android:textColor="?attr/colorPrimary"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:shadowColor="?attr/colorOnSecondary"
+        android:shadowDy="4"
+        android:shadowRadius="4"
+        android:text="Добро пожаловать в ShareHelp!" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="96dp"
+        android:background="@drawable/input_field_frame_shape_login"
+        android:inputType="textEmailAddress"
+        android:textSize="18sp"
+        android:hint="Email"
+        android:paddingVertical="8dp"
+        android:paddingHorizontal="12dp" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/input_field_frame_shape_login"
+        android:inputType="textPassword"
+        android:textSize="18sp"
+        android:hint="Пароль"
+        android:paddingVertical="8dp"
+        android:paddingHorizontal="12dp" />
+
+    <TextView
+        android:id="@+id/forgot_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="4dp"
+        android:layout_gravity="right"
+        android:textSize="14sp"
+        android:text="Забыли пароль?"
+        android:textColor="?attr/colorPrimary"
+        android:shadowColor="?attr/colorOnSecondary"
+        android:shadowDy="4"
+        android:shadowRadius="4" />
+
+    <Button
+        android:id="@+id/enter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/login_button_frame_shape"
+        android:textColor="?attr/colorPrimary"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:text="Войти" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp">
+
+        <TextView
+            android:id="@+id/or"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="?attr/colorPrimary"
+            android:textSize="18sp"
+            android:text="или" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@id/or"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/input_field_frame_shape_login" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/or"
+            android:layout_marginStart="16dp"
+            android:background="@drawable/input_field_frame_shape_login" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/enter_with_google"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/input_field_frame_shape_login"
+        android:textColor="?attr/colorSecondaryVariant"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:text="Войти с помощью Google" />
+    
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:layout_gravity="center">
+
+        <TextView
+            android:id="@+id/no_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="?attr/colorPrimary"
+            android:text="Нет аккаунта?" />
+
+        <TextView
+            android:id="@+id/register"
+            android:layout_toEndOf="@id/no_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="?attr/colorPrimary"
+            android:text="Зарегистрироваться" />
+
+    </RelativeLayout>
+
+</LinearLayout>
