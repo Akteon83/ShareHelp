@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="16dp"
+    android:layout_marginTop="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:padding="12dp">
+
+        <ImageView
+            android:id="@+id/tag_picture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/svgrepo_sports" />
+
+        <TextView
+            android:id="@+id/discussion_topic"
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:layout_marginStart="12dp"
+            android:gravity="center_vertical"
+            android:textSize="18sp"
+            android:text="Теннисная секция в Люберцах" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

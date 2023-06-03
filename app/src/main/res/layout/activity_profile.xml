@@ -13,10 +13,10 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
         android:layout_marginTop="128dp"
-        android:padding="16dp"
         android:background="@drawable/profile_data_shape"
+        android:orientation="vertical"
+        android:padding="16dp"
         tools:context=".ProfileActivity">
 
         <com.Akteon_.sharehelp.views.InputField
@@ -47,8 +47,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="12dp"
-            android:textSize="14sp"
-            android:text="Интересы" />
+            android:text="Интересы"
+            android:textSize="14sp" />
 
         <com.Akteon_.sharehelp.views.TextCheckbox
             android:id="@+id/sports"
@@ -78,13 +78,30 @@
             android:layout_marginTop="12dp"
             android:text="Программирование" />
 
-        <Button
-            android:id="@+id/log_off"
+        <com.Akteon_.sharehelp.views.TextCheckbox
+            android:id="@+id/travelling"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="8dp" />
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Путешествия" />
 
     </LinearLayout>
+
+    <ImageView
+        android:id="@+id/checkmark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="16dp"
+        android:src="@drawable/svgrepo_checkmark" />
+
+    <ImageView
+        android:id="@+id/xmark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_margin="16dp"
+        android:src="@drawable/svgrepo_xmark" />
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/profile_image"

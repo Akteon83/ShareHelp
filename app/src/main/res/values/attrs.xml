@@ -13,4 +13,9 @@
     <declare-styleable name="TextCheckbox">
         <attr name="android:text" format="string" />
     </declare-styleable>
+
+    <declare-styleable name="ChatMessage">
+        <attr name="author_username" format="string" />
+        <attr name="message_text" format="string" />
+    </declare-styleable>
 </resources>

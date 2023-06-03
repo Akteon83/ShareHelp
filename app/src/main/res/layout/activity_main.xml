@@ -48,6 +48,19 @@
 
     </RelativeLayout>
 
+    <TextView
+        android:id="@+id/log_off"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/top_bar"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="8dp"
+        android:padding="8dp"
+        android:visibility="gone"
+        android:background="@drawable/input_field_frame_shape_login"
+        android:textSize="16sp"
+        android:text="Выйти из аккаунта"/>
+
     <com.google.android.material.bottomnavigation.BottomNavigationView
         app:labelVisibilityMode="unlabeled"
         app:itemIconTint="@drawable/bottom_navigation_selector"

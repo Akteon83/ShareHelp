@@ -42,8 +42,7 @@ public class MainActivity extends AppCompatActivity {
         getSupportFragmentManager().beginTransaction().replace(R.id.container, homeFragment).commit();
 
         binding.profileImage.setOnClickListener(v -> {
-            Intent intent = new Intent(MainActivity.this, ProfileActivity.class);
-            startActivity(intent);
+            startActivity(new Intent(MainActivity.this, ProfileActivity.class));
         });
 
         bottomNavigationView.setOnItemSelectedListener(item -> {
@@ -71,6 +70,17 @@ public class MainActivity extends AppCompatActivity {
                     break;
             }
             return false;
+        });
+
+        binding.settings.setOnClickListener(v -> {
+            binding.logOff.setVisibility((binding.logOff.getVisibility() == View.GONE) ? View.VISIBLE : View.GONE);
+        });
+
+        binding.logOff.setOnClickListener(v -> {
+            controller.signOut();
+            startActivity(new Intent(this, LoginActivity.class));
+            finish();
+//            startActivity(new Intent(this, DiscussionActivity.class));
         });
     }
 }

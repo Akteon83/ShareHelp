@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DiscussionActivity"
+    android:background="@drawable/gradient_background">
+
+    <RelativeLayout
+        android:id="@+id/discussion_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:gravity="center_vertical"
+        android:background="?attr/colorPrimary">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/svgrepo_back" />
+
+        <TextView
+            android:id="@+id/discussion_title"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_toEndOf="@id/back"
+            android:layout_toStartOf="@id/quit"
+            android:layout_marginHorizontal="12dp"
+            android:gravity="center_vertical"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="?attr/colorSecondaryVariant"
+            android:text="Тема из ''Рика и Морти''" />
+
+        <ImageView
+            android:id="@+id/quit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/svgrepo_quit"
+            android:layout_alignParentEnd="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginVertical="48dp"
+        android:padding="8dp">
+
+        <com.Akteon_.sharehelp.views.ChatMessage
+            android:id="@+id/sus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:author_username="NikitaTropin"
+            app:message_text="Привет!" />
+
+        <com.Akteon_.sharehelp.views.ChatMessage
+            android:id="@+id/hih"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sus"
+            android:layout_marginTop="4dp"
+            app:author_username="NikitaTropin"
+            app:message_text="Я нашёл ноты, которые тебе нужны" />
+
+        <com.Akteon_.sharehelp.views.ChatMessage
+            android:id="@+id/yey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/hih"
+            android:layout_marginTop="4dp"
+            app:author_username="NikitaTropin"
+            app:message_text="https://youtu.be/dQw4w9WgXcQ" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="128dp"
+            android:layout_marginTop="8dp"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/message_frame_shape_fake"
+            android:padding="8dp"
+            android:layout_below="@id/yey">
+
+            <TextView
+                android:id="@+id/author_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:text="Akteon_"/>
+
+            <TextView
+                android:id="@+id/message_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/author_username"
+                android:textSize="16sp"
+                android:text="Большое спасибо!" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="12dp"
+        android:gravity="center_vertical"
+        android:background="?attr/colorPrimary">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:layout_marginEnd="12dp"
+            android:layout_toStartOf="@id/send"
+            android:background="@color/transparent"
+            android:gravity="center_vertical"
+            android:hint="Сообщение"
+            android:textSize="18sp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <ImageView
+            android:id="@+id/send"
+            android:layout_alignParentEnd="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/svgrepo_send" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
